@@ -17,7 +17,7 @@ There are several rules that *jCards* uses to determine what class to give to a 
 2. Any card that has the ```.tacked``` class is set as ```.card-full``` instead.
 3. If the last card before a ```.tacked``` card or the last card on the page would normally be set as ```.card-left```, *jCards* sets it to ```.card-full``` to fill the entire row.
 
-Much of the above behavior can be changed by passing jCards special options.
+Much of the above behavior can be changed by passing *jCards* special options.
 
 ## Requirements ##
 
