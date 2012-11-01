@@ -73,6 +73,10 @@
 </li>
 </ol><p>Much of the above behavior can be changed by passing <em>jCards</em> special options.</p>
 
+<h2>Why Not Use PHP?</h2>
+
+<p>This library is meant to be used with pages that load elements into the page through AJAX. For this reason, it does the processing on the client-side.</p>
+
 <h2>Requirements</h2>
 
 <ul>
@@ -102,6 +106,17 @@
 <h2>Special Options</h2>
 
 <p>Documentation coming soon.</p>
+
+<h2>Handling AJAX</h2>
+
+<p>Whenever new items are loaded into the page using AJAX, call the following function:</p>
+
+<div class="highlight"><pre><span class="nx">jQuery</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+  <span class="nx">jQuery</span><span class="p">(</span><span class="s2">"#wrapper"</span><span class="p">).</span><span class="nx">redrawCards</span><span class="p">();</span>
+<span class="p">});</span>
+</pre></div>
+
+<p>This schedules a redraw, allowing new posts to be added with their alignment assigned. Additionally, any previously loaded posts that have been made full due to being the final posts will be recalculated.</p>
 
 <h2>License</h2>
 
