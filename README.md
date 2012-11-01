@@ -46,6 +46,10 @@ There are several rules that *jCards* uses to determine what class to give to a 
 
 Much of the above behavior can be changed by passing *jCards* special options.
 
+## Why Not Use PHP? ##
+
+This library is meant to be used with pages that load elements into the page through AJAX. For this reason, it does the processing on the client-side.
+
 ## Requirements ##
 
 * jQuery
@@ -77,6 +81,18 @@ jQuery(document).ready(function(){
 ## Special Options ##
 
 Documentation coming soon.
+
+## Handling AJAX ##
+
+Whenever new items are loaded into the page using AJAX, call the following function:
+
+```javascript
+jQuery(document).ready(function(){
+  jQuery("#wrapper").redrawCards();
+});
+```
+
+This schedules a redraw, allowing new posts to be added with their alignment assigned. Additionally, any previously loaded posts that have been made full due to being the final posts will be recalculated.
 
 ## License ##
 
