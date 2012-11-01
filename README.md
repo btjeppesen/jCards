@@ -78,4 +78,9 @@ $(document).ready(function(){
 
 Documentation coming soon.
 
+## License ##
+
+*jCards* is licensed under the terms of the MIT License, see the included MIT-LICENSE file.
+
+
 &copy; [Brian Jeppesen][]
