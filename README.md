@@ -69,7 +69,7 @@ Much of the above behavior can be changed by passing *jCards* special options.
 The simplest setup for *jCards* requires only the following three lines:
 
 ```javascript
-$(document).ready(function(){
+jQuery(document).ready(function(){
   jQuery("#wrapper").drawCards();
 });
 ```
